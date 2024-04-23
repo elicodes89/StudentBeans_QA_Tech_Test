@@ -17,6 +17,6 @@ When('I enter {string}', async (searchValue) => {
   await simpleSearchPageObject.enterSearchValue(searchValue)
 })
 
-Then('I should select the {int}th {string} search listing', async (order, expectedResult) => {
-  await simpleSearchPageObject.selectSearchListing(order, expectedResult)
+Then('I should select the {int}th {string} search listing', async (item, expectedResult) => {
+  await simpleSearchPageObject.selectSearchListing(item, expectedResult)
 })
